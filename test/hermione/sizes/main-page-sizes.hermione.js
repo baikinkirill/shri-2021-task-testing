@@ -4,7 +4,6 @@ async function loadPage(width, height, browser) {
 	await browser.url('./');
 	await browser.setWindowSize(width, height);
 	await browser.assertView('plain', '#root', {
-		compositeImage: true,
 		ignoreElements:['Application-Brand'],
 		screenshotDelay:1000,
 	});

@@ -4,7 +4,6 @@ async function loadPage(width, height, browser) {
 	await browser.url('./catalog/0');
 	await browser.setWindowSize(width, height);
 	await browser.assertView('plain', '#root', {
-		compositeImage: true,
 		ignoreElements: [
 			".ProductDetails-Name",
 			".ProductDetails-Price",

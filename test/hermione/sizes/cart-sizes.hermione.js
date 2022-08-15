@@ -4,7 +4,6 @@ async function loadPage(width, height, browser) {
     await browser.url('./cart');
     await browser.setWindowSize(width, height);
     await browser.assertView('plain', '#root', {
-        compositeImage: true,
         screenshotDelay:1000,
     });
 }
