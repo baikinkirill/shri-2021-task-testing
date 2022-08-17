@@ -10,7 +10,7 @@ module.exports = async (hermione) => {
 	await execSync("yarn build", {stdio: [0, 1, file]})
 
 	console.log("Start project");
-	await spawn("yarn start:test-server", {
+	const server = spawn("yarn start:test-server", {
 		stdio: ["ignore", file, file],
 		shell: true
 	})
@@ -30,8 +30,9 @@ module.exports = async (hermione) => {
 		hermione.events.RUNNER_END,
 		() =>
 			new Promise((res, rej) => {
-				selenium.on("exit", () => res())
+				server.kill()
 				selenium.kill()
+				res()
 			})
 	)
 }
