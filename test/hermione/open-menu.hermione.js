@@ -8,7 +8,10 @@ describe('При выборе элемента из меню "гамбургер
         await browser.pause(1000);
         await browser.$(".nav-link").click();
         await browser.assertView('plain', '.container', {
-            screenshotDelay:1000,
+            allowViewportOverflow: true,
+            captureElementFromTop: false,
+            compositeImage: false,
+            screenshotDelay: 1000,
         });
     });
 

@@ -5,7 +5,10 @@ async function loadPage(width, height, browser) {
 	await browser.setWindowSize(width, height);
 	await browser.assertView('plain', '#root', {
 		ignoreElements:['Application-Brand'],
-		screenshotDelay:1000,
+		allowViewportOverflow: true,
+		captureElementFromTop: false,
+		compositeImage: false,
+		screenshotDelay: 1000,
 	});
 }
 

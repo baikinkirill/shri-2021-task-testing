@@ -6,8 +6,6 @@ module.exports={
 	gridUrl:"http://192.168.56.1:4444/wd/hub",
 	sessionsPerBrowser:4,
 	retry: 5,
-	screenshotMode:"auto",
-	compositeImage:false,
 	screenshotDelay:1000,
 	sets: {
 		desktop: {

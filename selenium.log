@@ -1,0 +1,25 @@
+[2K[1G[33mwarning[39m package.json: No license field
+yarn run v1.22.18
+warning package.json: No license field
+$ nodemon ./test/test-server/index.ts
+[33m[nodemon] 2.0.19[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: ts,json[39m
+[32m[nodemon] starting `ts-node ./test/test-server/index.ts`[39m
+15:07:34.141 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+15:07:34.148 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+Failed to connect to selenium. Attempts left: 115 
+ connect ECONNREFUSED 127.0.0.1:4444
+15:07:36.777 INFO [NodeOptions.getSessionFactories] - Detected 12 available processors
+15:07:36.816 INFO [NodeOptions.discoverDrivers] - Discovered 4 driver(s)
+15:07:36.841 INFO [NodeOptions.report] - Adding Chrome for {"browserName": "chrome"} 12 times
+15:07:36.841 INFO [NodeOptions.report] - Adding Edge for {"browserName": "MicrosoftEdge"} 12 times
+15:07:36.841 INFO [NodeOptions.report] - Adding Firefox for {"browserName": "firefox"} 12 times
+15:07:36.841 INFO [NodeOptions.report] - Adding Internet Explorer for {"browserName": "internet explorer"} 1 times
+15:07:36.928 INFO [Node.<init>] - Binding additional locator mechanisms: relative, id, name
+15:07:36.953 INFO [LocalDistributor.add] - Added node a7338d06-b5d0-4679-baa6-63269750b566 at http://172.27.144.1:4444. Health check every 120s
+15:07:36.953 INFO [GridModel.setAvailability] - Switching node a7338d06-b5d0-4679-baa6-63269750b566 (uri: http://172.27.144.1:4444) from DOWN to UP
+Example app listening at http://localhost:3000/hw/store
+15:07:37.661 INFO [Standalone.execute] - Started Selenium Standalone 4.0.0 (revision 3a21814679): http://172.27.144.1:4444
+Selenium started

@@ -7,10 +7,10 @@ module.exports = async (hermione) => {
 	const file = fs.openSync("selenium.log", "w")
 
 	console.log("Build project")
-	// await execSync("yarn build", {stdio: [0, 1, file]})
+	await execSync("yarn build", {stdio: [0, 1, file]})
 
 	console.log("Start project");
-	await spawn("yarn start", {
+	await spawn("yarn start:test-server", {
 		stdio: ["ignore", file, file],
 		shell: true
 	})

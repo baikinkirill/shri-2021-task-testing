@@ -11,7 +11,10 @@ async function loadPage(width, height, browser) {
 			".ProductItem-Price",
 			".Image"
 		],
-		screenshotDelay:1000,
+		allowViewportOverflow: true,
+		captureElementFromTop: false,
+		compositeImage: false,
+		screenshotDelay: 1000,
 	});
 }
 

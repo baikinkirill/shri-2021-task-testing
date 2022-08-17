@@ -9,9 +9,13 @@ async function loadPage(width, height, browser) {
 			".ProductDetails-Price",
 			".ProductDetails-Description",
 			".ProductDetails-Color",
-			".ProductDetails-Material"
+			".ProductDetails-Material",
+			".Image"
 		],
-		screenshotDelay:1000,
+		allowViewportOverflow: true,
+		captureElementFromTop: false,
+		compositeImage: false,
+		screenshotDelay: 1000,
 	});
 }
 

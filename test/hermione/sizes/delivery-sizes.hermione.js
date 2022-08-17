@@ -4,7 +4,11 @@ async function loadPage(width, height, browser) {
 	await browser.url('./delivery');
 	await browser.setWindowSize(width, height);
 	await browser.assertView('plain', '#root', {
-		screenshotDelay:1000,
+		allowViewportOverflow: true,
+		captureElementFromTop: false,
+		compositeImage: false,
+		screenshotDelay: 1000,
+		ignoreElements: [".Image"]
 	});
 }
 
